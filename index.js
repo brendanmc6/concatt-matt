@@ -53,7 +53,7 @@ const startTimer = msg => {
 //every time somebody posts a message
 client.on("message", msg => {
   //and that somebody was matt
-  if (msg.author.discriminator === "0535") {
+  if (msg.author.discriminator === "2244") {
     //and if matt had just posted, reset the timer and save the message
     if (matt.justPosted) {
       clearTimeout(matt.timer);
