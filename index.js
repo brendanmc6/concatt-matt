@@ -1,6 +1,6 @@
 const Discord = require("discord.js");
 const client = new Discord.Client();
-const { secret_code } = require("./secret");
+const secret = require("./secret");
 
 client.on("ready", () => {
   console.log(`Logged in as ${client.user.tag}!`);
@@ -64,4 +64,4 @@ client.on("message", msg => {
   }
 });
 
-client.login("NDUxODE2OTIyMDY2MTkwMzUx.DfHikQ.24br2H6B_dAP1U-kjGjeoI4KjTU");
+client.login(secret.secret_code);
